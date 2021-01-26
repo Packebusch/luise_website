@@ -1,0 +1,97 @@
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+/* your custom css */
+.productShowcaseSection h2, .projectTitle, a {
+  color: #1D1D1D!important;
+}
+
+button, a.button {
+  border-color: #1D1D1D!important;
+  color: #1D1D1D!important;
+}
+
+.nav-footer {
+  background-color: #FFF!important;
+}
+.imageAlignTop .blockImage{
+  max-width:200px!important;
+}
+
+.smallH2 h2 {
+  font-size: 1.2rem;
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+  input {
+    padding: .375rem .75rem;
+    margin: .375rem ;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+}
+
+@media only screen and (min-width: 1024px) {
+  input {
+    padding: .375rem .75rem;
+    margin: .375rem ;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+}
+
+@media only screen and (max-width: 1023px) {
+  input {
+    padding: .375rem .75rem;
+    margin: .375rem ;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+}
+
+@media only screen and (min-width: 1400px) {
+  input {
+    padding: .375rem .75rem;
+    margin: .375rem ;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+}
+
+@media only screen and (min-width: 1500px) {
+  input {
+    padding: .375rem .75rem;
+    margin: .375rem ;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+}
