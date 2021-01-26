@@ -11,9 +11,9 @@
 // List of projects/orgs using your project for the users page.
 
 const siteConfig = {
-  title: 'Coopreneurs', // Title for your website.
-  tagline: 'We build and own ventures, together.',
-  url: 'https://coopreneurs.com', // Your website URL
+  title: 'Luise Kamisek', // Title for your website.
+  tagline: 'Autorin von binär',
+  url: 'https://example.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -21,23 +21,23 @@ const siteConfig = {
 
   // Used for publishing and more
   projectName: 'website',
-  organizationName: 'Coopreneurs',
+  organizationName: 'Luise Kamisek',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {href: "/#howItWorks", label: "How it works"},
-    {href: "/aboutUs", label: "About us"},
-    {doc: 'manifest', label: 'Manifesto'},
-    {blog: true, label: 'Blog'},
+    // {href: "/#howItWorks", label: "How it works"},
+    // {href: "/aboutUs", label: "About us"},
+    // {doc: 'manifest', label: 'Manifesto'},
+    // {blog: true, label: 'Blog'},
   ],
 
   /* path to images for header/footer */
-  headerIcon: 'img/coopreneurs_signet.png',
-  footerIcon: 'img/coopreneurs_signet.png',
-  favicon: 'img/coopreneurs_signet.png',
+  headerIcon: '',
+  footerIcon: '',
+  favicon: '',
 
   /* Colors for website */
   colors: {
@@ -45,6 +45,12 @@ const siteConfig = {
     secondaryColor: '#FFF',
   },
 
+  pictures: {
+    about: '/img/about.jpg',
+    roman: '/img/roman.jpg',
+    shortStories: '/img/shortStories.jpg',
+    contact: '/img/contact.jpg',
+  },
   /* Custom fonts for website */
 
 

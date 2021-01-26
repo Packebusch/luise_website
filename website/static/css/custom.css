@@ -6,6 +6,12 @@
  */
 
 /* your custom css */
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .productShowcaseSection h2, .projectTitle, a {
   color: #1D1D1D!important;
 }

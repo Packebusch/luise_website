@@ -19,7 +19,8 @@ class HomeSplash extends React.Component {
     const {baseUrl, docsUrl} = siteConfig;
     const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
     const docUrl = doc => `${baseUrl}${docsPart}${doc}`;
-
+    const pageUrl = page => baseUrl + page;
+    
     const SplashContainer = props => (
       <div className="homeContainer">
         <div className="homeSplashFade">
@@ -56,14 +57,26 @@ class HomeSplash extends React.Component {
         </a>
       </div>
     );
+    const Image = props => (
+      <div style={props.style} className="pluginRowBlock imageWrapper">
+        <a href={props.href}>
+          <img className="image" src={props.src} height="200"></img>
+        </a>
+      </div>
+    );
 
     return (
       <SplashContainer>
-        <div className="inner">
+        {/* <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
-          <PromoSection>
-            <Button href="#howItWorks">Learn how it works</Button>
-          </PromoSection>
+        </div> */}
+        <div style={{marginTop:"10%"}}className="row">
+          <Image href={pageUrl('shortStories.html')} src={siteConfig.pictures.shortStories}/>
+          <Image href={pageUrl('contact.html')} style={{marginLeft:100, marginTop: 50}} src={siteConfig.pictures.contact}/>
+        </div>
+        <div className="row">
+          <Image href={pageUrl('about.html')} style={{marginLeft:-100, marginTop: -50}} src={siteConfig.pictures.about}/>
+          <Image href={pageUrl('roman.html')} style={{marginRight:100, marginTop: 50}} src={siteConfig.pictures.roman}/>
         </div>
       </SplashContainer>
     );
@@ -250,13 +263,7 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          {/* <Features />*/}
-          <Summary />
-          <Benefits />
-          <StartUpMarket />
-          <HowItWorks />
-          <Contact />
-          <NeedHelp />
+          
         </div>
       </div>
     );

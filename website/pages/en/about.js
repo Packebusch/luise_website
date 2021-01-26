@@ -5,6 +5,14 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+
+const ABOUT = `
+Nein, ich wollte nicht schon immer Schriftstellerin werden. Meeresbiologin, Frontfrau einer Indierock-Band, Naturschützerin. Die Idee für den Roman kam mir im Halbschlaf, und wer würde das Buch denn schreiben, wenn nicht ich selbst? Ich schob das Vorhaben vor mich her: Erstmal Master machen, dann eine Anstellung finden. Nach zwei Jahren erfolglosem Bewerben hatte ich genug. 
+Ich suchte mir einen Teilzeitjob, der mich geistig und körperlich nicht erschöpfte und mir genug Zeit fürs Schreiben ließ. Ich schrieb auf Reisen, in Cafés, auf meinem Balkon, am See. Drei Jahre, in denen ich so sehr Gefallen am kreativen Schreiben fand, dass der nächste Roman in Planung ist.
+Wenn ich nicht an neuen Texten sitze, verkaufe ich Kaffee und Kuchen im tollsten Café Leipzigs. Alternativ findet man mich auf der Matte im besten Kampfsportgym der Stadt.
+`;
+
+
 const React = require('react');
 
 const CompLibrary = require('../../core/CompLibrary.js');
@@ -22,9 +30,9 @@ class HomeSplash extends React.Component {
     const docUrl = doc => `${baseUrl}${docsPart}${doc}`;
 
     const SplashContainer = props => (
-      <div className="homeContainer">
+      <div style={{alignSelf:'flex-start', borderWidth:1}} className="homeContainer">
         <div className="homeSplashFade">
-          <div className="wrapper homeWrapper">{props.children}</div>
+          <div className="wrapper homeWrapper" style={{alignItems:'flex-start'}}>{props.children}</div>
         </div>
       </div>
     );
@@ -34,7 +42,14 @@ class HomeSplash extends React.Component {
         <img src={props.img_src} alt="Project Logo" />
       </div>
     );
-
+    const Block = props => (
+        <GridBlock
+          className="smallH2"
+          align="center"
+          contents={props.children}
+          layout={props.layout}
+        />
+    );
     const ProjectTitle = props => (
       <div>
         <h2 className="projectTitle">We.</h2>
@@ -42,16 +57,33 @@ class HomeSplash extends React.Component {
         <h2 className="projectTitle">Humans.</h2>
       </div>
     );
+    const Image = props => (
+      <div  className="imageWrapper">
+        <img style={props.style} className="image" src={props.src} height="300"></img>
+      </div>
+    );
 
     return (
       <SplashContainer>
-        <div className="inner">
-          <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
+        <div
+          className="marginTop"
+          style={{textAlign: 'center', marginTop:"10%"}}>
+          <Block id="try">
+            {[
+              {
+                content: ABOUT,
+                image: `${baseUrl}img/about.jpg`,
+                imageAlign: 'left',
+                title: '',
+              },
+            ]}
+          </Block>
         </div>
       </SplashContainer>
     );
   }
 }
+
 
 class Index extends React.Component {
   render() {
@@ -191,13 +223,12 @@ class Index extends React.Component {
     return (
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
-        <div className="mainContainer">
-          {/* <Features />*/}
+        {/* <div className="mainContainer">
           <Summary />
           <Principles />
           <Members />
           <Contact />
-        </div>
+        </div> */}
       </div>
     );
   }
