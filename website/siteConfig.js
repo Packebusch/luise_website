@@ -11,7 +11,7 @@
 // List of projects/orgs using your project for the users page.
 
 const siteConfig = {
-  title: 'Luise Kamisek', // Title for your website.
+  title: 'Luise Scholz', // Title for your website.
   tagline: 'Autorin von binär',
   url: 'https://example.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
@@ -21,7 +21,7 @@ const siteConfig = {
 
   // Used for publishing and more
   projectName: 'website',
-  organizationName: 'Luise Kamisek',
+  organizationName: 'Luise Scholz',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -46,10 +46,10 @@ const siteConfig = {
   },
 
   pictures: {
-    about: '/img/about.jpg',
-    roman: '/img/roman.jpg',
-    shortStories: '/img/shortStories.jpg',
-    contact: '/img/contact.jpg',
+    about: '/img/profil.png',
+    roman: '/img/binaer.png',
+    shortStories: '/img/kurzgeschichten.png',
+    contact: '/img/kontakt.png',
   },
   /* Custom fonts for website */
 
@@ -75,13 +75,7 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js',
-            {
-              id: "_agile_min_js",
-              src: "https://coopreneurs.agilecrm.com/stats/min/agile-min.js",
-              async: true,
-            },
-          ],
+  scripts: ['https://buttons.github.io/buttons.js'],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',
