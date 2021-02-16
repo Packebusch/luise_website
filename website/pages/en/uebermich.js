@@ -85,7 +85,7 @@ class HomeSplash extends React.Component {
 }
 
 
-class Index extends React.Component {
+class About extends React.Component {
   render() {
     const {config: siteConfig, language = ''} = this.props;
     const {baseUrl} = siteConfig;
@@ -234,4 +234,4 @@ class Index extends React.Component {
   }
 }
 
-module.exports = Index;
+module.exports = About;
