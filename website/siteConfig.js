@@ -13,15 +13,15 @@
 const siteConfig = {
   title: 'Luise Scholz', // Title for your website.
   tagline: 'Autorin von binär',
-  url: 'https://example.com', // Your website URL
-  baseUrl: '/', // Base URL for your project */
+  url: 'https://Packebusch.github.io', // Your website URL
+  baseUrl: '/luise_website/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
   // Used for publishing and more
-  projectName: 'website',
-  organizationName: 'Luise Scholz',
+  projectName: 'luise_website',
+  organizationName: 'Packebusch',
   // For top-level user or org sites, the organization is still the same.
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
@@ -46,10 +46,10 @@ const siteConfig = {
   },
 
   pictures: {
-    about: '/img/profil.png',
-    roman: '/img/binaer.png',
-    shortStories: '/img/kurzgeschichten.png',
-    contact: '/img/kontakt.png',
+    about: '/luise_website/img/profil.png',
+    roman: '/luise_website/img/binaer.png',
+    shortStories: '/luise_website/img/kurzgeschichten.png',
+    contact: '/luise_website/img/kontakt.png',
   },
   /* Custom fonts for website */
 
