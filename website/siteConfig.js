@@ -13,7 +13,7 @@
 const siteConfig = {
   title: 'Luise Scholz', // Title for your website.
   tagline: 'Autorin von binär',
-  url: 'https://Packebusch.github.io', // Your website URL
+  url: 'https://luisescholz.de', // Your website URL
   baseUrl: '/luise_website/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -75,7 +75,8 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: ['https://buttons.github.io/buttons.js', 'https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js'],
+  
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',

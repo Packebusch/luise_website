@@ -13,11 +13,19 @@ const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
 function Kontakt(props) {
-  const {config: siteConfig} = props;
-  const {baseUrl, docsUrl} = siteConfig;
-  const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
-  const docUrl = doc => `${baseUrl}${docsPart}${doc}`;
 
+  const pageUrl = (page) =>
+			props.config.baseUrl +
+			page;
+  const Button = props => (
+    <div style={{
+      marginTop: "10vh"
+    }} className="pluginWrapper buttonWrapper">
+      <a className="button" href={props.href} target={props.target}>
+      {props.children}
+      </a>
+    </div>
+    );
   return (
     <div className="docMainWrapper wrapper">
       <Container className="mainContainer documentContainer postContainer">
@@ -25,8 +33,12 @@ function Kontakt(props) {
           <header className="postHeader">
             <h1>Kontakt</h1>
           </header>
+          <p>Sie sind Literaturagent*in oder arbeiten in einem Verlag? Ich freue mich über über Angebote, denn noch ist das Buch nicht veröffentlicht.</p>
           <p>Email: luisescholz@posteo.de</p>
         </div>
+        <Button href={pageUrl("index.html")}>
+          Zurück
+        </Button>
       </Container>
     </div>
   );

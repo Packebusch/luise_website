@@ -31,7 +31,7 @@ class Roman extends React.Component {
 		const interview = {
 			marginLeft: "20%",
 			marginRight: "20%",
-			textAlign: "left", 
+			textAlign: "justify", 
 			fontSize: 16
 		};
 		const question = {
@@ -54,7 +54,7 @@ class Roman extends React.Component {
 			<div className="mainContainer">
 				<Container padding={["bottom", "top"]}>
 					<div style={heading} >
-					 Interview über den Roman "binär"
+					 Worum geht es in "binär"? - Ein fiktives Interview
 					</div>
 					<div style={interview}> 
 						<div style={question}>

@@ -41,12 +41,47 @@ class HomeSplash extends React.Component {
     );
 
     return (
+      <div>
         <div style={{marginTop:"2%"}} className="gridBlock center">
           <Image title="Roman" href={pageUrl('roman.html')}  src={siteConfig.pictures.roman}/>
           <Image title="Über mich" href={pageUrl('uebermich.html')} src={siteConfig.pictures.about}/>
           <Image title="Kurzgeschichten" href={pageUrl('kurzgeschichten.html')} src={siteConfig.pictures.shortStories}/>
           <Image title="Kontakt" href={pageUrl('kontakt.html')} src={siteConfig.pictures.contact}/>
         </div>
+        <div style={{width: '100%'}} id="content">
+
+        </div>
+        <script
+        dangerouslySetInnerHTML={{
+          __html: `
+          window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+              container: document.getElementById("content"),
+              "palette": {
+                "popup": {
+                  "background": "#fff",
+                  "text": "#000"
+                },
+                "button": {
+                  "background": "#263238",
+                  "text": "#fff!important"
+                },
+                onStatusChange: function(status) {
+                  console.log(this.hasConsented() ?
+                   'enable cookies' : 'disable cookies');
+                 },
+              },
+              "content": {
+                "message": "Die Website nutzt lediglich technisch notwendige Cookies.",
+                "dismiss": "Verstanden!",
+                "link": "Zur Datenschutzerklärung",
+                "href": "https://www.luisescholz.de/impressum/"
+              }
+            })});
+          `,
+        }}
+      />
+    </div>
     );
   }
 }
