@@ -38,7 +38,7 @@ const siteConfig = {
   headerIcon: '',
   footerIcon: '',
   favicon: '',
-
+  cname: 'luisescholz.de',
   /* Colors for website */
   colors: {
     primaryColor: '#FFF',
