@@ -14,7 +14,7 @@ const siteConfig = {
   title: 'Luise Scholz', // Title for your website.
   tagline: 'Autorin von binär',
   url: 'https://luisescholz.de', // Your website URL
-  baseUrl: '/', // Base URL for your project */
+  baseUrl: '/luise_website/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
@@ -46,10 +46,10 @@ const siteConfig = {
   },
 
   pictures: {
-    about: '/luise_website/img/profil.png',
-    roman: '/luise_website/img/binaer.png',
-    shortStories: '/luise_website/img/kurzgeschichten.png',
-    contact: '/luise_website/img/kontakt.png',
+    about: '/img/profil.png',
+    roman: '/img/binaer.png',
+    shortStories: '/img/kurzgeschichten.png',
+    contact: '/img/kontakt.png',
   },
   /* Custom fonts for website */
 

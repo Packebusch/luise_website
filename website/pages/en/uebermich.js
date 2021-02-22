@@ -59,7 +59,7 @@ class HomeSplash extends React.Component {
             {[
               {
                 content: ABOUT + BUTTON,
-                image: `/luise_website/img/luise.png`,
+                image: `/img/luise.png`,
                 imageAlign: 'left',
                 title: '',
               },
