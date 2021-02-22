@@ -14,7 +14,7 @@ const siteConfig = {
   title: 'Luise Scholz', // Title for your website.
   tagline: 'Autorin von binär',
   url: 'https://luisescholz.de', // Your website URL
-  baseUrl: '/luise_website/', // Base URL for your project */
+  baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
