@@ -13,7 +13,7 @@ Wenn ich nicht an neuen Texten sitze, verkaufe ich Kaffee und Kuchen im tollsten
 `;
 
 const BUTTON = `
-  <div style="margin-top:10vh" class="pluginWrapper buttonWrapper"><a class="button" href="luisescholz.de">Zurück</a></div>
+  <div style="margin-top:10vh" class="pluginWrapper buttonWrapper"><a class="button" href="/">Zurück</a></div>
 `;
 
 
