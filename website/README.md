@@ -8,17 +8,20 @@ $ cd Workspace/luise_website
 ```
 3. start dev-server
 ```sh
-# Start the site
 $ yarn start
 ```
-4. make your changes (code like a hero)
-5. save changes
+4. open code editor
+```sh
+$ code .
+```
+5. make your changes (code like a hero)
+6. save changes
 ```sh
 $ git add .
 $ git commit -m "describe your changes here"
 $ git push
 ```
-6. release changes to the world
+7. release changes to the world
 ```sh
 $ yarn publish-gh-pages
 ```
@@ -34,7 +37,7 @@ luise_website/
     blog/
     core/
     node_modules/
-    pages/ ()
+    pages/ (This are the individual pages of your website. If you want to change something there you need to change it in e.g. kontakt.js)
       cafe.js
       impressum.js
       index.js
@@ -53,11 +56,96 @@ luise_website/
     siteConfig.js (sometimes you need this)
 ```
 
-# Editing Content
+## Editing Pages
 
-## Editing an existing docs page
+### index.js
+index.js is your homepage with the pictures.
 
-Edit docs by navigating to `docs/` and editing the corresponding document:
+Change things here if you want to edit `index.html`.
+
+If you want to change the pictures, you need to change them in siteConfig.js in line 48 (pictures)
+
+
+### roman.js
+Change things here if you want to edit `roman.html`.
+
+Make your changes in these variables at the top section. 
++ **headline** => `HEADLINE`
++ **interview** => `INTERVIEW`
++ **button** => `BUTTON`
+
+### leseprobe.js
+Change things here if you want to edit `leseprobe.html`.
+
+Make your changes in these variables at the top section. 
++ **headline** => `HEADLINE`
++ **leseprobe content** => `CONTENT`
++ **copyright** => `COPYRIGHT`
++ **button** => `BUTTON`
+
+
+### uebermich.js
+Change things here if you want to edit `uebermich.html`.
+
+Make your changes in these variables at the top section. 
++ **text** => `ABOUT`
++ **button** => `BUTTON`
+
+### kurzgeschichten.js
+Change things here if you want to edit `kurzgeschichten.html`.
+
+Make your changes in these variables at the top section. 
++ **headline** => HEADING
++ **kurzgeschichten** => KURZGESCHICHTEN
++ **button** => BUTTON
+
+### cafe.js
+Change things here if you want to edit `cafe.html`.
+
+Make your changes in these variables at the top section. 
++ **headline** => `HEADLINE`
++ **kurzgeschichte content** => `CONTENT`
++ **copyright** => `COPYRIGHT`
++ **button** => `BUTTON`
+
+### matilda.js
+Change things here if you want to edit `matilda.html`.
+
+Make your changes in these variables at the top section. 
++ **headline** => `HEADLINE`
++ **kurzgeschichte content** => `CONTENT`
++ **copyright** => `COPYRIGHT`
++ **button** => `BUTTON`
+
+### tribadie.js
+Change things here if you want to edit `tribadie.html`.
+
+Make your changes in these variables at the top section. 
++ **headline** => `HEADLINE`
++ **kurzgeschichte content** => `CONTENT`
++ **copyright** => `COPYRIGHT`
++ **button** => `BUTTON`
+
+### kontakt.js
+Change things here if you want to edit `kontakt.html`.
+
+
+### impressum.js
+Change things here if you want to edit `impressum.html`.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 `docs/doc-to-be-edited.md`
 

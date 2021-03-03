@@ -6,10 +6,31 @@
  */
 
 const React = require('react');
-
 const CompLibrary = require('../../core/CompLibrary.js');
-
 const Container = CompLibrary.Container;
+
+//  CONTENT ===> CHANGE ONLY HERE, LUISE!
+
+const HEADING = 'Kurzgeschichten';
+const KURZGESCHICHTEN = [
+	{
+		name: 'Im Café',
+		link: 'cafe.html',
+	},
+	{
+		name: 'Matilda',
+		link: 'matilda.html',
+	},
+	{
+		name: 'Tribadie',
+		link: 'tribadie.html',
+	},
+];
+const BUTTON = {
+	text: 'Zurück',
+	url: 'index.html'
+};
+
 
 class Kurzgeschichten extends React.Component {
 	render() {
@@ -22,12 +43,6 @@ class Kurzgeschichten extends React.Component {
 			textAlign: "center", 
 			fontSize: 24,   
 			marginBottom: "5rem"
-		};
-		const content = {
-			marginLeft: "20%",
-			marginRight: "20%",
-			textAlign: "justify", 
-			fontSize: 16
 		};
 		const Link = props => (
 			<a className="link" href={props.href}>
@@ -47,26 +62,18 @@ class Kurzgeschichten extends React.Component {
 			<div className="mainContainer">
 				<Container padding={["bottom", "top"]}>
 					<div style={heading} >
-           				Kurzgeschichten
+           				{HEADING}
 					</div>
-					<div style={content}> 
-						<div style={{marginBottom:5, fontSize:20}}>
-							<Link href={pageUrl('cafe.html')}>
-								Im Café
-							</Link>
-						</div>
-						<div style={{marginBottom:5, fontSize:20}}>
-							<Link href={pageUrl('matilda.html')}>
-								Matilda
-							</Link>
-						</div>
-						<div style={{marginBottom:5, fontSize:20}}>
-							<Link href={pageUrl('tribadie.html')}>
-								Tribadie
-							</Link>
-						</div>
-                        <Button href={pageUrl('index.html')}>
-							Zurück
+					<div className="content"> 
+						{KURZGESCHICHTEN.map(element => (
+							<div style={{marginBottom:5, fontSize:20}}>
+								<Link href={pageUrl(element.link)}>
+									{element.name}
+								</Link>
+							</div>
+						))}
+                        <Button href={pageUrl(BUTTON.url)}>
+							{BUTTON.text}
 						</Button>
 					</div>
 					

@@ -6,46 +6,14 @@
  */
 
 const React = require('react');
-
 const CompLibrary = require('../../core/CompLibrary.js');
-
 const Container = CompLibrary.Container;
 
-class Cafe extends React.Component {
-	render() {
-		const {siteConfig} = this.props;
-		const pageUrl = (page) =>
-			this.props.config.baseUrl +
-			page;
-		
-		const heading = {
-			textAlign: "center", 
-			fontSize: 24,   
-			marginBottom: "2rem"
-		};
-		const content = {
-			marginLeft: "20%",
-			marginRight: "20%",
-			textAlign: "justify", 
-			fontSize: 16
-		};
-		const Button = props => (
-			<div style={{
-				marginTop: "10vh"
-			}} className="pluginWrapper buttonWrapper">
-			  <a className="button" href={props.href} target={props.target}>
-				{props.children}
-			  </a>
-			</div>
-		  );
-		return (
-			<div className="mainContainer">
-				<Container padding={["bottom", "top"]}>
-					<div style={heading} >
-           Im Café
-					</div>
-					<div style={content}> 
 
+//  CONTENT ===> CHANGE ONLY HERE, LUISE!
+
+const HEADING = 'Im Café';
+const CONTENT = `
 Der kleine Mann trägt einen dunkelblauen, gut sitzenden Anzug und ein weißes gestärktes Hemd. Seine wenigen hellgrauen Haare verraten sein Alter ebenso wie der Bauchansatz und die Falten rund um die Augen, die dank der randlosen Brille gut sichtbar sind.
 Geübt hilft der Mann der Frau die Treppenstufen hoch; er scheint genau zu wissen, wo er sie an ihrem zierlichen Körper anfassen kann, ohne ihr dabei wehzutun.
 Die Frau hat ihre nicht mehr vorhandenen Augenbrauen schwarz nachgezogen. Auch die Augen wurden mit dunklem Kajal umrandet. Der himbeerfarbene Lippenstift ist auf das Rot der Fingernägel abgestimmt, die weißblonden, dünnen Haare zu einem Dutt frisiert. Unter ihrem beigefarbenen Trenchcoat  
@@ -70,7 +38,7 @@ Er bezahlt und geht zurück zur Frau.<br/>
 „Mama, willst du nochmal auf die Toilette gehen?“, fragt der Mann sie. Die Frau nickt und ineinander gehakt machen sie sich auf Richtung Toilette.<br/>
 „Schau, Mama, du brauchst nicht abzuschließen. Ich pass auf, dass niemand reinkommt“, sagt der kleine Mann, während er ihr die Tür aufhält. <br/>
 Als sie zurück zu ihrem Tisch kommen, steht ihre Bestellung bereits dort.<br/>
-„Ach, das siehst aber lecker aus“, ruft die Frau entzückt.<br/>
+„Ach, das sieht aber lecker aus“, ruft die Frau entzückt.<br/>
 „Was hast du dir denn bestellt?“<br/>
 „Das ist ein Eiskaffee und ein Vanillequark mit Heidelbeeren.“<br/>
 „Oh, Heidelbeeren! Die würde ich jetzt auch gerne essen!“<br/>
@@ -164,14 +132,50 @@ Carmen schweigt. Der Vanillequark und der Eiskaffee stehen wie zur Dekoration au
 Irgendwann schaut Rüdiger auf seine Armbanduhr.<br/>
 „Ich muss los. Ich hol ihn am Freitag von der Schule ab. So wie wir es schriftlich festgehalten haben.“<br/>
 Er streckt seine Arme nochmal lang nach oben, bevor er aufsteht. Alles an ihm ist groß. Zwei Meter Körperlänge, große Turnschuhe, lange Beine, breites Kreuz. Er schiebt sich den Rest vom Bananenbrot in den Mund, legt kommentarlos fünf Euro auf den Tresen und stiefelt mit großen Schritten aus dem Café.<br/>
+`;
+const COPYRIGHT = 'Autorin: Luise Scholz. Alle Rechte vorbehalten.';
+const BUTTON = {
+	url: 'kurzgeschichten.html',
+	text: 'Zurück',
+};
+
+class Cafe extends React.Component {
+	render() {
+		const {siteConfig} = this.props;
+		const pageUrl = (page) =>
+			this.props.config.baseUrl +
+			page;
+		
+		const heading = {
+			textAlign: "center", 
+			fontSize: 24,   
+			marginBottom: "2rem"
+		};
+		const Button = props => (
+			<div style={{
+				marginTop: "10vh"
+			}} className="pluginWrapper buttonWrapper">
+			  <a className="button" href={props.href} target={props.target}>
+				{props.children}
+			  </a>
+			</div>
+		  );
+		return (
+			<div className="mainContainer">
+				<Container padding={["bottom", "top"]}>
+					<div style={heading} >
+						{HEADING}
+					</div>
+					<div className="content"> 
+						<div dangerouslySetInnerHTML={{ __html: CONTENT }}/> 
 						<p style={{
                             marginTop: "1rem",
                             fontStyle: "italic"
                         }}>
-                            Autorin: Luise Scholz. Alle Rechte vorbehalten.
+                            {COPYRIGHT}
                         </p>
-                        <Button href={pageUrl('kurzgeschichten.html')}>
-							Zurück
+                        <Button href={pageUrl(BUTTON.url)}>
+							{BUTTON.text}
 						</Button>
 					</div>
 					

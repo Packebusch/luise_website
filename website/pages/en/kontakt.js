@@ -6,11 +6,8 @@
  */
 
 const React = require('react');
-
 const CompLibrary = require('../../core/CompLibrary.js');
-
 const Container = CompLibrary.Container;
-const GridBlock = CompLibrary.GridBlock;
 
 function Kontakt(props) {
 
@@ -33,7 +30,7 @@ function Kontakt(props) {
           <header className="postHeader">
             <h1>Kontakt</h1>
           </header>
-          <p>Sie sind Literaturagent*in oder arbeiten in einem Verlag? Ich freue mich über über Angebote, denn noch ist das Buch nicht veröffentlicht.</p>
+          <p>Sie arbeiten in einem Verlag oder in einer Literaturagentur? Ich freue mich über Angebote, denn noch ist das Buch nicht veröffentlicht.</p>
           <p>Email: luisescholz@posteo.de</p>
         </div>
         <Button href={pageUrl("index.html")}>

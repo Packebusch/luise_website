@@ -12,6 +12,7 @@ html {
 body {
   height: 100%;
 }
+
 .row {
   display: flex;
   flex-direction: row;
@@ -36,6 +37,12 @@ button, a.button {
   text-decoration: underline!important;
 }
 
+.content {
+  margin-right: 20%;
+  margin-left: 20%;
+  text-align: justify; 
+  font-size: 16;
+}
 
 .nav-footer {
   background-color: #FFF!important;
@@ -48,8 +55,18 @@ button, a.button {
   font-size: 1.2rem;
 }
 
-@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
-  
+@media only screen and (max-width: 735px) {
+  .imageAlignSide .blockImage {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .content {
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: justify; 
+    font-size: 16px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {  
