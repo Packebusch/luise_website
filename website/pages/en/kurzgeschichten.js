@@ -60,8 +60,8 @@ class Kurzgeschichten extends React.Component {
            				{HEADING}
 					</div>
 					<div className="content"> 
-						{KURZGESCHICHTEN.map(element => (
-							<div style={{marginBottom:5, fontSize:20}}>
+						{KURZGESCHICHTEN.map((element, index) => (
+							<div key={index} style={{marginBottom:5, fontSize:20}}>
 								<Link href={pageUrl(element.link)}>
 									{element.name}
 								</Link>

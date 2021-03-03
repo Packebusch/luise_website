@@ -71,7 +71,7 @@ class Matilda extends React.Component {
 		return (
 			<div className="mainContainer">
 				<Container padding={["bottom", "top"]}>
-				<div className="heading">
+					<div className="heading">
             {HEADING}
 					</div>
 					<div className="content"> 
