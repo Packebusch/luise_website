@@ -65,23 +65,14 @@ class Roman extends React.Component {
 		const pageUrl = (page) =>
 			this.props.config.baseUrl +
 			page;
-		
-		const heading = {
-			textAlign: "center", 
-			fontSize: 24, 
-			marginBottom: "2rem"
-		};
-		const subHeading = {
-			textAlign: "left", 
-			fontSize: 20,
-			marginBottom: "1rem"
-		};
 		const question = {
 			fontWeight: "bold", 
+			fontSize: '1.25rem'
 		};
 		const answer = {
 			fontWeight: "regular", 
-
+			fontSize: '1.25rem',
+			marginBottom: 10
 		};
 		const Button = props => (
 			<div style={{
@@ -95,12 +86,12 @@ class Roman extends React.Component {
 		return (
 			<div className="docMainWrapper wrapper">
 				<Container padding={["bottom", "top"]}>
-					<div style={heading} >
+					<div className="heading">
 					 {HEADING}
 					</div>
 					<div className="content"> 
-						{INTERVIEW.map(element => (
-							<div>
+						{INTERVIEW.map((element, index) => (
+							<div key={index}>
 								<div style={question}>
 									{element.question}
 								</div>

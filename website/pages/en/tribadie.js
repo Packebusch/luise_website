@@ -106,12 +106,6 @@ class Tribadie extends React.Component {
 		const pageUrl = (page) =>
 			this.props.config.baseUrl +
 			page;
-		
-		const heading = {
-			textAlign: "center", 
-			fontSize: 24,   
-			marginBottom: "2rem"
-		};
 		const Button = props => (
 			<div style={{
 				marginTop: "10vh"
@@ -124,8 +118,8 @@ class Tribadie extends React.Component {
 		return (
 			<div className="mainContainer">
 				<Container padding={["bottom", "top"]}>
-					<div style={heading} >
-           {HEADING}
+					<div className="heading">
+           				{HEADING}
 					</div>
 					<div className="content"> 
             <div dangerouslySetInnerHTML={{ __html: CONTENT }}/> 

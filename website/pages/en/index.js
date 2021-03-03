@@ -34,7 +34,7 @@ class HomeSplash extends React.Component {
         
         <div className="blockElement twoByGridBlock blockImage">
           <a href={props.href}>
-            <img title={props.title} className="image" src={props.src} height="360"></img>
+            <img alt={props.title} title={props.title} className="image" src={props.src} height="360"></img>
           </a>
         </div>
         

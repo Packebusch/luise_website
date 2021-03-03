@@ -27,11 +27,6 @@ class Leseprobe extends React.Component {
 			this.props.config.baseUrl +
 			page;
 		
-		const heading = {
-			textAlign: "center", 
-			fontSize: 24, 
-			marginBottom: "2rem"
-		};
 		const Button = props => (
 			<div style={{
 				marginTop: "10vh"
@@ -44,7 +39,7 @@ class Leseprobe extends React.Component {
 		return (
 			<div className="mainContainer">
 				<Container padding={["bottom", "top"]}>
-					<div style={heading} >
+					<div className="heading">
                         {HEADING}
 					</div>
 					<div className="content"> 

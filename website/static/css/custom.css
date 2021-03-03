@@ -38,10 +38,15 @@ button, a.button {
 }
 
 .content {
-  margin-right: 20%;
-  margin-left: 20%;
-  text-align: justify; 
-  font-size: 16;
+  margin-right: 10%;
+  margin-left: 10%;
+  font-size: 1.25rem;
+  line-height:  1.75rem;
+}
+.heading {
+  text-align: center; 
+	font-size: 1.75rem;
+  margin-bottom: 2rem;
 }
 
 .nav-footer {
