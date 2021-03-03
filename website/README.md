@@ -1,52 +1,56 @@
-This website was created with [Docusaurus](https://docusaurus.io/).
+# How to edit this website (for Luise)
 
-# What's In This Document
-
-- [Get Started in 5 Minutes](#get-started-in-5-minutes)
-- [Directory Structure](#directory-structure)
-- [Editing Content](#editing-content)
-- [Adding Content](#adding-content)
-- [Full Documentation](#full-documentation)
-
-# Get Started in 5 Minutes
-
-1. Make sure all the dependencies for the website are installed:
+1. open Terminal
+2. navigate to website folder 
 
 ```sh
-# Install dependencies
-$ yarn
+$ cd Workspace/luise_website
 ```
-
-2. Run your dev server:
-
+3. start dev-server
 ```sh
 # Start the site
 $ yarn start
 ```
+4. make your changes (code like a hero)
+5. save changes
+```sh
+$ git add .
+$ git commit -m "describe your changes here"
+$ git push
+```
+6. release changes to the world
+```sh
+$ yarn publish-gh-pages
+```
 
-## Directory Structure
+# How to change your website
 
 Your project file structure should look something like this
 
 ```
-my-docusaurus/
-  docs/
-    doc-1.md
-    doc-2.md
-    doc-3.md
+luise_website/
+  docs/ 
   website/
     blog/
-      2016-3-11-oldest-post.md
-      2017-10-24-newest-post.md
     core/
     node_modules/
-    pages/
+    pages/ ()
+      cafe.js
+      impressum.js
+      index.js
+      kontakt.js
+      kurzgeschichten.js
+      leseprobe.js
+      matilda.js
+      roman.js
+      tribadie.js
+      uebermich.js
     static/
       css/
-      img/
+      img/ (here are your images - put new ones here)
     package.json
     sidebars.json
-    siteConfig.js
+    siteConfig.js (sometimes you need this)
 ```
 
 # Editing Content
