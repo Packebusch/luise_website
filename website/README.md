@@ -4,7 +4,7 @@
 2. navigate to website folder 
 
 ```sh
-cd Workspace/luise_website
+cd Workspace/luise_website/website
 ```
 3. start dev-server
 ```sh
@@ -15,14 +15,19 @@ yarn start
 code .
 ```
 5. make your changes (code like a hero)
-6. save changes
+6. terminate dev-server
+```sh
+ctrl + c
+```
+7. save changes
 ```sh
 git add .
 git commit -m "describe your changes here"
 git push
 ```
-7. release changes to the world
+8. release changes to the world
 ```sh
+export GIT_USER=Packebusch
 yarn publish-gh-pages
 ```
 
