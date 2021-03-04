@@ -2,30 +2,33 @@
 
 1. open Terminal
 2. navigate to website folder 
-
 ```sh
 cd Workspace/luise_website/website
 ```
-3. start dev-server
+3. get latest changes in case someone else (e.g. Tom) changed something
+```sh
+git pull
+```
+4. start dev-server
 ```sh
 yarn start
 ```
-4. open code editor
+5. open code editor
 ```sh
 code .
 ```
-5. make your changes (code like a hero)
-6. terminate dev-server
+6. make your changes (code like a hero)
+7. terminate dev-server
 ```sh
 ctrl + c
 ```
-7. save changes
+8. save changes
 ```sh
 git add .
 git commit -m "describe your changes here"
 git push
 ```
-8. release changes to the world
+9. release changes to the world
 ```sh
 export GIT_USER=Packebusch
 yarn publish-gh-pages
