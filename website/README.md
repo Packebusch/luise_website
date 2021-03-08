@@ -11,7 +11,7 @@ git pull
 ```
 4. start dev-server
 ```sh
-yarn start
+make start
 ```
 5. open code editor
 ```sh
@@ -24,14 +24,11 @@ ctrl + c
 ```
 8. save changes
 ```sh
-git add .
-git commit -m "describe your changes here"
-git push
+make save
 ```
 9. release changes to the world
 ```sh
-export GIT_USER=Packebusch
-yarn publish-gh-pages
+make release
 ```
 
 # How to change your website
