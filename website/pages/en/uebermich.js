@@ -11,8 +11,8 @@
 
 const ABOUT = `
 Nein, ich wollte nicht schon immer Schriftstellerin werden. Meeresbiologin, Frontfrau einer Indierock-Band, Naturschützerin. Die Idee für den Roman kam mir im Halbschlaf, und wer würde das Buch denn schreiben, wenn nicht ich selbst? Ich schob das Vorhaben vor mir her: Erstmal Master machen, dann eine Anstellung finden. Nach zwei Jahren erfolglosem Bewerben hatte ich genug. 
-Ich suchte mir einen Teilzeitjob, der mich geistig und körperlich nicht erschöpfte und mir genug Zeit fürs Schreiben ließ. Ich schrieb auf Reisen, in Cafés, auf meinem Balkon, am See. Drei Jahre, in denen ich so sehr Gefallen am kreativen Schreiben fand, dass der nächste Roman in Planung ist.
-Wenn ich nicht an neuen Texten sitze, verkaufe ich Kaffee und Kuchen im tollsten Café Leipzigs. Alternativ findet man mich auf der Matte im besten Kampfsportgym der Stadt.
+Ich suchte mir einen Teilzeitjob, der mich geistig und körperlich nicht erschöpfte und mir genug Zeit fürs Schreiben ließ. Ich schrieb auf Reisen, in Cafés, auf meinem Balkon, am See. 
+Drei Jahre, in denen ich so sehr Gefallen am kreativen Schreiben fand, dass ich nun am nächsten Manuskript arbeite. Ausgleich finde ich in meinem Beruf als Kickboxtrainerin für FLINTA*-Personen und Jugendliche im besten Kampfsportgym Leipzigs.
 `;
 
 const BUTTON = `

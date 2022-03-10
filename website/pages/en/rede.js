@@ -11,43 +11,20 @@ const Container = CompLibrary.Container;
 
 //  CONTENT ===> CHANGE ONLY HERE, LUISE!
 
-const HEADING = 'Kurzgeschichten';
-const KURZGESCHICHTEN = [
-	{
-		name: 'Im Café',
-		link: 'cafe.html',
-	},
-	{
-		name: 'Matilda',
-		link: 'matilda.html',
-	},
-	{
-		name: 'Tribadie',
-		link: 'tribadie.html',
-	},
-	{
-		name: '"Gemahlin kommt nun mal nicht von Malen" Ungehaltene Rede',
-		link: 'rede.html'
-	},
-];
+const HEADING = '"Gemahlin kommt nun mal nicht von Malen" Ungehaltene Rede';
+
+const COPYRIGHT = 'Autorin: Luise Scholz. Alle Rechte vorbehalten.';
 const BUTTON = {
+	url: 'kurzgeschichten.html',
 	text: 'Zurück',
-	url: 'index.html'
 };
 
-
-class Kurzgeschichten extends React.Component {
+class Rede extends React.Component {
 	render() {
 		const {siteConfig} = this.props;
 		const pageUrl = (page) =>
 			this.props.config.baseUrl +
 			page;
-		
-		const Link = props => (
-			<a className="link" href={props.href}>
-				{props.children}
-			</a>
-		)
 		const Button = props => (
 			<div style={{
 				marginTop: "10vh"
@@ -64,14 +41,17 @@ class Kurzgeschichten extends React.Component {
            				{HEADING}
 					</div>
 					<div className="content"> 
-						{KURZGESCHICHTEN.map((element, index) => (
-							<div key={index} style={{marginBottom:5, fontSize:20}}>
-								<Link href={pageUrl(element.link)}>
-									{element.name}
-								</Link>
-							</div>
-						))}
-                        <Button href={pageUrl(BUTTON.url)}>
+            <a style={{
+				color: 'blue', 
+				textDecoration: 'underline'
+				}} href={'https://www.youtube.com/watch?v=gwvi2-HA9Uc'}>Link zum Video</a>
+						<p style={{
+                marginTop: "1rem",
+                fontStyle: "italic"
+            }}>
+              {COPYRIGHT}
+            </p>
+            <Button href={pageUrl(BUTTON.url)}>
 							{BUTTON.text}
 						</Button>
 					</div>
@@ -82,4 +62,4 @@ class Kurzgeschichten extends React.Component {
 	}
 }
 
-module.exports = Kurzgeschichten;
+module.exports = Rede;
