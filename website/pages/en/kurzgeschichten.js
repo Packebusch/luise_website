@@ -26,7 +26,7 @@ const KURZGESCHICHTEN = [
 		link: 'tribadie.html',
 	},
 	{
-		name: '"Gemahlin kommt nun mal nicht von Malen" Ungehaltene Rede',
+		name: '»Gemahlin kommt nun mal nicht von Malen« Ungehaltene Rede',
 		link: 'rede.html'
 	},
 ];
