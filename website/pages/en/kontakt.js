@@ -30,7 +30,7 @@ function Kontakt(props) {
           <header className="postHeader">
             <h1>Kontakt</h1>
           </header>
-          <p>Sie arbeiten in einem Verlag oder in einer Literaturagentur? Ich freue mich über Angebote, denn noch ist das Buch nicht veröffentlicht.</p>
+          <p>Für Buchbestellungen und Anfragen:</p>
           <p>Email: luisekamisek@posteo.de</p>
         </div>
         <Button href={pageUrl("index.html")}>
