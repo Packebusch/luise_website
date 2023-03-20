@@ -18,12 +18,13 @@ class Impressum extends React.Component {
             <div className="prose">
             <h1>Impressum</h1>
             <h2>Angaben gemäß § 5 TMG</h2>
-            <p>Luise Scholz<br />
-            Zwenkauer Stra&szlig;e 19<br />
-            04277 Leipzig</p>
+            <p>Luise Kamisek<br />
+            c/o AutorenServices.de<br />
+            Birkenallee 24<br />
+            36037 Fulda</p>
             <h2>Kontakt</h2>
             <p>
-            E-Mail: luisescholz@posteo.de</p>
+            E-Mail: luisekamisek@posteo.de</p>
             <h3>Zeichnungen</h3>
             <p>
               Julika Prantner-Weber <br/>

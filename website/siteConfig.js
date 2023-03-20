@@ -11,9 +11,9 @@
 // List of projects/orgs using your project for the users page.
 
 const siteConfig = {
-  title: 'Luise Scholz', // Title for your website.
+  title: 'Luise Kamisek', // Title for your website.
   tagline: 'Autorin von binär',
-  url: 'https://luisescholz.de', // Your website URL
+  url: 'https://luisekamisek.de', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
@@ -38,7 +38,7 @@ const siteConfig = {
   headerIcon: '',
   footerIcon: '',
   favicon: '',
-  cname: 'luisescholz.de',
+  cname: 'luisekamisek.de',
   /* Colors for website */
   colors: {
     primaryColor: '#FFF',
@@ -48,6 +48,7 @@ const siteConfig = {
   pictures: {
     about: '/img/profil.png',
     roman: '/img/binaer.png',
+    binaerbook: '/img/binaerbook.png',
     shortStories: '/img/kurzgeschichten.png',
     contact: '/img/kontakt.png',
   },

@@ -5,6 +5,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+const MarkdownBlock = require('docusaurus/lib/core/MarkdownBlock.js');
 const React = require('react');
 const CompLibrary = require('../../core/CompLibrary.js');
 const Container = CompLibrary.Container;
@@ -14,66 +15,34 @@ const Container = CompLibrary.Container;
 //  CONTENT ===> CHANGE ONLY HERE, LUISE!
 
 const HEADING = 'Worum geht es in "binär"? - Ein fiktives Interview';
-const INTERVIEW = [
-	{ 
-		question: '„Binär“ ist eine Utopie. Wie unterscheidet sich die Gesellschaft in „binär“ von unserer?				',
-		answer: 'In „binär“ wird nicht mehr zwischen Mann und Frau unterschieden. Ähnlich wie die Unterteilung in Rassen gilt die Unterteilung in Geschlechter wissenschaftlich gesehen als überholt und als diskriminierend. Alle Charaktere bekommen den Artikel „der“, weil es im Deutschen „der Mensch“ heißt.',
-	},
-	{ 
-		question: 'Das wäre nicht für alle Menschen utopisch...',
-		answer: 'Zumindest genießen die Menschen in „binär“ mehr persönliche und rechtliche Freiheiten als wir. Es geht um Toleranz und das Abschaffen von Stereotypen. Natürlich ist diese Gesellschaft nicht ideal. Man sollte sie auf jeden Fall auch kritisch betrachten. Sexismus bekommt eben den gleichen Stellenwert wie Rassismus oder Antisemitismus. Damit kann jede Person, die das Buch liest, machen was sie will. ',
-	},
-	{ 
-		question: 'Wie kam es zur Abschaffung der Geschlechter?',
-		answer: 'Viel erfährt man nicht, aber es hat eine Revolution stattgefunden. Die ist allerdings schon so lange her, dass es niemanden mehr gibt, der die Revolution oder Geschlechterdiskriminierung miterlebt hat.',
-	},
-	{ 
-		question: 'Das Buch beginnt mit einer Beschreibung von Tille. Wer ist das? ',
-		answer: 'Tille ist Ende zwanzig und arbeitet in einem Fitnessstudio. Nebenbei plant er die Gründung seines eigenen Kampfsportstudios. Er verliebt sich in Lofi, der Mitglied in der „Binären Bewegung“ ist.',
-	},
-	{ 
-		question: 'Was ist die „Binäre Bewegung“?',
-		answer: 'Die Binäre Bewegung ist eine Art Untergrundorganisation, die so lebt wie wir, also mit Geschlechtsidentität. Sie ist ziemlich gut organisiert, mit Ferienfreizeiten, Jugendclub, eigenem Verlag, in dem Bücher aus unserer Zeit neu aufgelegt werden und so weiter. ',
-	},
-	{ 
-		question: 'Tille verliebt sich also in einen Menschen, der sich eine Geschlechtsidentität gibt?',
-		answer: 'Genau, Lofi bezeichnet sich als Frau.',
-	},
-	{ 
-		question: 'Was macht das mit Tille?',
-		answer: 'Zu viel möchte ich nicht verraten, aber Tille ist ganz schön verliebt. Und wenn er Lofi aufgrund seiner Mitgliedschaft in der Binären Bewegung verlassen würde, wäre das Buch ja ziemlich kurz. Es prallen zwei Weltanschauungen aufeinander, was zwangsläufig Konflikte mit sich bringt. ',
-	},
-	{ 
-		question: 'Woran werden diese unterschiedlichen Weltanschauungen noch deutlich?',
-		answer: 'In der Sprache, denn das Buch ist hauptsächlich geschlechtsneutral geschrieben. Im Deutschen ist das nicht leicht, weil drei verschiedene Artikel existieren und es zu jeder Berufs-, Verwandtschafts- oder Beziehungsbezeichnung einen männlichen und einen weiblichen Begriff gibt. Ich habe mir darum viele geschlechtsneutrale Wörter ausdenken oder Substantive durch Relativsätze oder Partizipien ergänzen müssen. Das ist etwas gewöhnungsbedürftig, aber es ging für mich nicht anders. Die Mitglieder der Binären Bewegung reden natürlich so wie wir es kennen, in geschlechtsspezifischer Sprache, die aber eigentlich nicht mehr benutzt wird.',
-	},
-	{ 
-		question: 'Ist geschlechtsspezifische Sprache einfach ausgestorben?',
-		answer: 'Mehr als das: Wörter wie Mann, Frau, Schwester und so weiter werden als genauso diskriminierend betrachtet wie zum Beispiel das N-Wort. Ein radikales Gedankenexperiment eben.',
-	},
-];
+const SUMMARY = ` 
+Als Tille sich in Lofi verliebt, weiß Tille nichts von Lofis Geheimnis: Lofi ist Teil der »Binären Bewegung«, einer Untergrundorganisation, die nach dem Zweigeschlechtersystem lebt. 
+Lofi definiert sich als »Frau«. Lofi benutzt ausgestorbene Wörter, liest andere Bücher, schaut alte Filme und kann Tille davon überzeugen, ein »Mann« zu sein.
+Was für Tille als Experiment startet, wird schon bald zu einem Lebensentwurf mit tiefgreifenden Folgen.
+
+Ein hochaktuelles Debüt über Identitäten, Diskriminierung und die Grenzen persönlicher Freiheit.
+`
+
 const BUTTON = {
 	url: "leseprobe.html",
-	text: 'Leseprobe',
+	text: 'Zur Leseprobe',
 };
+const Image = props => (
+	<div className="blockElement twoByGridBlock blockImage">
+	  <a href={props.href}>
+		<img alt={props.title} title={props.title} className="image" src={props.src} height="360"></img>
+	  </a>
+	</div>
+	
+);	  
 
 
 
 class Roman extends React.Component {
 	render() {
-		const {siteConfig} = this.props;
 		const pageUrl = (page) =>
 			this.props.config.baseUrl +
 			page;
-		const question = {
-			fontWeight: "bold", 
-			fontSize: '1.25rem'
-		};
-		const answer = {
-			fontWeight: "regular", 
-			fontSize: '1.25rem',
-			marginBottom: 10
-		};
 		const Button = props => (
 			<div style={{
 				marginTop: "10vh"
@@ -86,24 +55,53 @@ class Roman extends React.Component {
 		return (
 			<div className="docMainWrapper wrapper">
 				<Container padding={["bottom", "top"]}>
-					<div className="heading">
-					 {HEADING}
-					</div>
-					<div className="content"> 
-						{INTERVIEW.map((element, index) => (
-							<div key={index}>
-								<div style={question}>
-									{element.question}
-								</div>
-								<div style={answer}>
-									{element.answer}
-								</div>
+					<div style={{display:'flex', padding:'5%'}}> 						
+						<div style={{
+							display:'block',
+							width: '100%',
+							align: 'right',
+						}}>
+							<Image title="Roman" src={'/img/binaerbook.png'}/>
+							<i style={{marginTop:20, fontSize:12}}>
+								{'Covergestaltung: Julika Prantner-Weber'}
+								</i>
+						</div>
+
+						<div style={{
+							display:'block',
+							width: '100%',
+						}}>
+							<div>
+								<h3>
+								{'Eine Gesellschaft ohne binäre Geschlechterordnung – Utopie oder Chaos?'}
+								</h3>
+								<MarkdownBlock>{SUMMARY}</MarkdownBlock>
+								
 							</div>
-						))}
-						<Button href={pageUrl(BUTTON.url)}>
-							{BUTTON.text}
-						</Button>
+							<div>
+								<p style={{marginTop:20}}>
+								{'Ab 28.4.23 erhältlich auf '}
+								<a style={{
+									color: 'blue', 
+									textDecoration: 'underline'
+									}} href={'https://www.bod.de/buchshop/'}>https://www.bod.de/buchshop/</a>
+									{' oder per '}
+									<a style={{
+										color: 'blue', 
+										textDecoration: 'underline'
+									}} href={'mailto:luisekamisek@posteo.de'}>Email</a>
+									{' zzgl. Versandkosten bestellbar.'}
+								</p>
+							</div>
+							<div>
+								<Button href={pageUrl(BUTTON.url)}>
+									{BUTTON.text}
+								</Button>
+							</div>
+						</div>
 					</div>
+					
+					
 					
 				</Container>
 			</div>

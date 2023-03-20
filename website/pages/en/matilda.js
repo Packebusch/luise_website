@@ -41,7 +41,7 @@ Heute war der Umzug. Ich hatte ein bisschen ein schlechtes Gewissen, weil ich me
 Nur ausgezogen habe ich mich noch nicht vor ihr. Ich hatte das Gefühl, das sei vielleicht ein bisschen... zu früh dafür. Ich wollte Matilda nicht beschämen. Jetzt liege ich hier im Bett und sie strahlt mich an und ich habe schon jetzt das Gefühl: Wenn ich Matilda sehe, dann bin ich zuhause.<br/>
 <br/>
 `;
-const COPYRIGHT = 'Autorin: Luise Scholz. Alle Rechte vorbehalten.';
+const COPYRIGHT = 'Autorin: Luise Kamisek. Alle Rechte vorbehalten.';
 const BUTTON = {
 	url: 'kurzgeschichten.html',
 	text: 'Zurück',

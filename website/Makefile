@@ -10,5 +10,5 @@ save: ## save changes
 	git push 
 
 release: ## release to github pages
-	GIT_USER=Packebusch CURRENT_BRANCH=master yarn publish-gh-pages
+	GIT_USER=Packebusch USE_SSH=true CURRENT_BRANCH=master yarn publish-gh-pages
 

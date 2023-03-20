@@ -13,7 +13,7 @@ const Container = CompLibrary.Container;
 
 const HEADING = '"Gemahlin kommt nun mal nicht von Malen" Ungehaltene Rede';
 
-const COPYRIGHT = 'Autorin: Luise Scholz. Alle Rechte vorbehalten.';
+const COPYRIGHT = 'Autorin: Luise Kamisek. Alle Rechte vorbehalten.';
 const BUTTON = {
 	url: 'kurzgeschichten.html',
 	text: 'Zurück',

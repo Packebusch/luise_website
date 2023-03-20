@@ -75,7 +75,7 @@ class HomeSplash extends React.Component {
                 "message": "Die Website nutzt lediglich technisch notwendige Cookies.",
                 "dismiss": "Verstanden!",
                 "link": "Zur Datenschutzerklärung",
-                "href": "https://www.luisescholz.de/impressum/"
+                "href": "https://www.luisekamisek.de/impressum/"
               }
             })});
           `,

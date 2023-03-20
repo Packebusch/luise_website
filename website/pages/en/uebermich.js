@@ -11,7 +11,7 @@
 
 const ABOUT = `
 Nein, ich wollte nicht schon immer Schriftstellerin werden. Meeresbiologin, Frontfrau einer Indierock-Band, Naturschützerin. Die Idee für den Roman kam mir im Halbschlaf, und wer würde das Buch denn schreiben, wenn nicht ich selbst? Zunächst schob ich das Vorhaben vor mir her: Erstmal Master machen, dann eine Anstellung finden. Nach zwei Jahren erfolglosem Bewerben hatte ich genug. Ich suchte mir einen Teilzeitjob in der Gastronomie, der mich geistig und körperlich nicht erschöpfte und mir genug Zeit fürs Schreiben ließ. Ich schrieb auf Reisen, in Cafés, auf meinem Balkon, am See. Drei Jahre arbeitete ich an "binär" und in dieser Zeit fand ich so sehr Gefallen am kreativen Schreiben, dass ich nun am nächsten Manuskript arbeite (Arbeitstitel und Zusammenfassung: Fick dich, Patriarchat!).
-Mittlerweile verkaufe ich keinen Kaffee und Kuchen mehr, sondern habe meine zweite Leidenschaft zum Beruf gemacht. Ich bin Kickboxtrainerin für FLINTA*-Personen und Jugendliche im besten Kampfsportgym Leipzigs.
+Mittlerweile verkaufe ich keinen Kaffee und Kuchen mehr, sondern habe meine zweite Leidenschaft zum Beruf gemacht: Ich bin feministische (Kick-)Boxtrainerin.
 `;
 
 const BUTTON = `
